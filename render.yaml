@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: small-tire-store-backend
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    plan: free

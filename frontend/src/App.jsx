@@ -9,7 +9,7 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch('http://localhost:8080/api/hello')
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hello`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const text = await res.text()
       setMessage(text)
